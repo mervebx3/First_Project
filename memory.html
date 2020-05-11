@@ -1,0 +1,54 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<!-- metadata -->
+
+<head>
+<title> Memory by Merve </title> 
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="description" content="Memory by Merve" />
+<meta name="keywords" content="Memory, Gaming, Programming" />
+<meta name="author" content="Merve Bektas" />
+<meta name="robots" content="noindex" />
+<link href="favicon.ico" rel="shortcut icon" />
+<link href="stylesheetMemory.css" rel="stylesheet" type="text/css" />
+<script src="Memoryjs.js"></script>
+
+</head>
+
+<body onload="createCards()"> 
+
+<main>
+<ul>
+
+	<li id="countPair">Umgedrehte Karten: 0</li>
+	<li> Schwierigkeits Grad: 	</li>
+	<li>
+	<div class="Schwierigkeit">
+      <input type="radio" id="b1" name="group-b" onclick="memoryLevel_1()"/>
+      <label for="b1">Anfänger</label>
+      <input type="radio" id="b2" name="group-b" onclick="memoryLevel_2()"/>
+      <label for="b2">Vortgeschritten </label>
+      <input type="radio" id="b3" name="group-b" onclick="memoryLevel_3()"/>
+      <label for="b3">Profi</label>
+    </div>
+	</li>
+</ul> 
+<h1> Memory von  Merve </h1> 
+
+<button id="start" onclick="createCards()"> <p id="reset"><b>Neustart  </b></p></button> 
+
+<p id="end"> Sie haben das Memory gelöst,<br> Hezlichen Glückwunsch! </p>
+<button id="newGame" onclick="gameEnd()">Neues Spiel</button> 
+<div id="playground"> 
+
+
+
+
+</div> <!--End playground-->
+</main>
+
+</body> 
+
+</html> 

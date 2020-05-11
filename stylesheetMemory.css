@@ -1,0 +1,102 @@
+/*All-Selektor*/
+
+*{
+}
+/*Elemente- Selektor*/
+
+body{
+	background-color: #FFE5E5;
+	width: 1000px; 
+	font-size: 1em; 
+	margin-left:auto;
+	margin-right: auto;
+
+}
+h1{
+	text-align:center; 
+	margin-left: 35%;  
+	width: 300px;  
+	color: #B88080; 
+	font-size: 2em; 
+	
+}
+ul{
+	background-color: #DCB0B0;
+	padding-left: 15%;
+	
+
+}
+li{
+	display: inline-block; 
+	list-style-type:none;
+	font-size: 1em; 
+	padding: 5px;
+	color: #743636;
+}
+.Schwierigkeit input[type="radio"]{
+    visibility:hidden;
+}
+.Schwierigkeit label {
+	border: 1px solid #743636;
+	border-radius: 0.5em;
+	padding: 5px;
+} 
+.Schwierigkeit input:checked + label {
+  background: #B88080;
+  color: #FFE5E5;
+  box-shadow: none;
+}
+p#reset{
+	color: #995A5A;  
+	margin-top: 1px;
+	font-size: 1.3em;
+}
+p#end{
+	color: #B88080;
+	font-size: 3em;
+	text-align: center;
+	display: none; 
+}
+button#newGame{
+	color: #995A5A; 
+	margin-top: 1px;
+	font-size: 1.3em;
+	background: #FFE5E5; 
+	width: 200px; 
+	margin: 10px; 
+	margin-left: 40%; 
+	height: 50px;
+	padding: 10px;
+	display: none; 
+}
+button#start{
+	background: #FFE5E5; 
+	width: 200px; 
+	margin: 10px; 
+	margin-left: 40%; 
+	height: 50px;
+	padding: 10px;
+}
+div#playground{
+	
+	background: #FFE5E5; 
+	border: 3px solid #DCB0B0;
+	width: 780px; 
+	height: 520px;
+	padding: 10px;
+	margin-left: 10%;
+
+}
+div#playground > div {
+	background: #743636; 
+	width: 70px; 
+	height: 70px; 
+	float: left; 
+	margin: 10px;
+	padding: 20px; 
+	cursor: pointer; 
+	font-size: 2em; 
+	text-align: center; 
+	color: #743636;
+	
+}

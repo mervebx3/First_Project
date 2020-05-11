@@ -1,0 +1,36 @@
+<script>
+//dieses Sktipt wendet die Fisher-Yates Shuffle Methode an! 
+//er geht den Array von hinten durch und tauscht immer den Platz der ausgewählten zahl von hinten mit 
+//einer zufällig generierten zahl die kleiner als die arrray länge des ausgewählten arrays ist 
+
+//***** only the logical bacround for the Array *****//
+//var arra = ['A','B','C','D','E','F','G','H']; 
+//var i = arra.length, j, temp; 
+//	while (--i > 0){   							// here we´ve set the condition that the random number is between the choosen number-1 and zero 
+//		j = Math.floor(Math.random() * (i+1)); 	// j random generated number for the Fisher-Yates Shuffle Modern Algorithm 
+//		temp = arra[j]; 						// here follows the switch of two values 
+//		arra[j]= arra [i]; 
+//		arra[i] = temp;  
+		}
+//		document.write(arra); 
+
+//**** more reusable ist THIS here we add thisto the Array Object as a Method  ****//
+
+Array.prototype.shuffle = function(){
+	
+	var i = this.length, j, temp; 
+	while (--i > 0){   							
+		j = Math.floor(Math.random() * (i+1));  
+		temp = this[j]; 						
+		this[j]= this [i]; 
+		this[i] = temp; 
+	}
+	return this; //-> return the shuffled array 
+}
+var arra = ['A','B','C','D','E','F','G','H']; 
+var result = arra.shuffle(); 
+
+document.write(result); 
+</script>
+
+!!! Funktioniert nur wenn alle Kommentare oberhalb gelöscht werden !!!
